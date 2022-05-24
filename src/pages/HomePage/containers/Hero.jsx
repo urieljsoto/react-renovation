@@ -28,16 +28,16 @@ const Hero = () => {
               your home
             </h1>
           </div>
-          <div className='flex w-full justify-center'>
-            <div className='flex w-[80%]'>
-              <div className='flex flex-col items-center justify-center gap-3 w-[50%]'>
+          <div className='flex w-full justify-center px-0'>
+            <div className='flex md:w-[80%] gap-5 md:px-0 px-2'>
+              <div className='flex flex-col items-center justify-center gap-3 w-[50%] xsm:w-full'>
                 <HomeIcon className='w-12 bg-white text-blue-stone-500 p-2 rounded-full' />
                 <p className='text-white font-extralight text-center'>
                   Vivamus suscipit tortor eget
                   <br /> felis porttitor volutpat.
                 </p>
               </div>
-              <div className='flex flex-col items-center justify-center gap-3 w-[50%]'>
+              <div className='flex flex-col items-center justify-center gap-3 w-[50%] xsm:w-full'>
                 <PencilIcon className='w-12 bg-white text-blue-stone-500 p-2 rounded-full' />
                 <p className='text-white font-extralight text-center'>
                   Vivamus suscipit tortor eget
