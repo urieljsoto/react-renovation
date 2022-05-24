@@ -1,5 +1,6 @@
-import { HomeIcon, PencilIcon } from '@heroicons/react/outline';
+import { HomeIcon, PencilIcon } from '@heroicons/react/solid';
 import { Link } from 'react-router-dom';
+
 
 const Hero = () => {
   return (
@@ -29,7 +30,7 @@ const Hero = () => {
             </h1>
           </div>
           <div className='flex w-full justify-center px-0'>
-            <div className='flex md:w-[80%] gap-5 md:px-0 px-2'>
+            <div className='flex md:w-[80%] gap-8 md:px-0 px-2'>
               <div className='flex flex-col items-center justify-center gap-3 w-[50%] xsm:w-full'>
                 <HomeIcon className='w-12 bg-white text-blue-stone-500 p-2 rounded-full' />
                 <p className='text-white font-extralight text-center'>
