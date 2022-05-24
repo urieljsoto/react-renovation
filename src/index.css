@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header a.active{
+  @apply text-blue-stone-500 font-normal
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+  body {
+    font-family: 'League Spartan', sans-serif;
+  }
+
+  h2 {
+    @apply font-light text-4xl mb-3;
+  }
+
+  h3 {
+    @apply text-blue-stone-500 font-light text-xl;
+  }
+
+  p {
+    @apply font-light;
+  }
+
+  li {
+    @apply p-4 text-lg font-light
+
+    hover:text-blue-stone-500;
+  }
+
+  button {
+    @apply text-white bg-blue-stone py-2 px-10 font-extralight uppercase text-lg mt-4 w-full xsm:w-auto
+
+    hover:bg-blue-stone-500;
+  }
+  .home-bg {
+    background-image: url('./assets/images/hero-image.jpg');
+  }
+
+  input {
+    @apply w-full border-[1px] border-[#D3D3D3] p-2 rounded-none shadow-sm focus:outline-none text-xl font-light focus:border-blue-stone-500 focus:ring-1 focus:ring-blue-stone-500;
+  }
+  textarea {
+    @apply w-full border-[1px] border-[#D3D3D3] p-2 rounded-none shadow-sm focus:outline-none text-xl font-light focus:border-blue-stone-500 focus:ring-1 focus:ring-blue-stone-500 resize-none h-[100px];
+  }
 }
